@@ -6,6 +6,21 @@
     list-style: none;
 }
 
+.pokebola {
+    width: 3rem; 
+    height: 3rem;
+    background-image: url('/assets/svg/pokebolal.svg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute; 
+    transform: translateY(-20%); 
+}
+
+/* Remover o sublinhado dos links */
+.pokemon-link {
+    text-decoration: none;
+}
+
 .normal {
     background-color: #a6a877;
 }
@@ -88,7 +103,7 @@
 
 .pokemon .number {
     color: #000;
-    opacity: .3;
+    opacity: .4;
     text-align: right;
     font-size: .625rem;
 }
