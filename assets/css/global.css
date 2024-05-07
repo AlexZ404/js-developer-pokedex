@@ -9,7 +9,7 @@ body {
 
 .content {
     width: 100vw;
-    height: fit-content;
+    height: 100vh;
     padding: 1rem;
     background-color: #fff;
 }
@@ -20,33 +20,5 @@ body {
         height: auto;
         margin: 1rem auto;
         border-radius: 1rem;
-    }
-}
-
-@media screen and (min-width: 1500px) {
-    .content {
-        max-width: 1500px; /* Ajuste o valor conforme necessário */
-        padding: 2rem; /* Ajuste o espaçamento conforme necessário */
-    }
-
-    .pagination button {
-        font-size: 0.75rem; /* Ajuste o tamanho do botão de paginação */
-        padding: 0.5rem 1rem; /* Ajuste o espaçamento do botão de paginação */
-    }
-
-    .pokemon .name {
-        font-size: 1.15rem; /* Ajuste o tamanho do nome do Pokémon */
-    }
-
-    .pokemon .detail img {
-        max-width: 70%;
-        height: 300px;   
-    }
-
-    .pokemon .number {
-        color: #000;
-        opacity: .4;
-        text-align: right;
-        font-size: 5rem;
     }
 }
