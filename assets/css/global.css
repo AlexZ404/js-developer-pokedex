@@ -9,9 +9,25 @@ body {
 
 .content {
     width: 100vw;
-    height: fit-content;
+    height: 100vh;
     padding: 1rem;
     background-color: #fff;
+}
+
+.titulo{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokebola {
+    width: 2.5rem; 
+    height: 2.5rem;
+    background-image: url('/assets/svg/pokebolal.svg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute; 
+    transform: translateY(-10%); 
 }
 
 @media screen and (min-width: 992px) {
@@ -23,30 +39,8 @@ body {
     }
 }
 
-@media screen and (min-width: 1500px) {
-    .content {
-        max-width: 1500px; /* Ajuste o valor conforme necessário */
-        padding: 2rem; /* Ajuste o espaçamento conforme necessário */
-    }
-
-    .pagination button {
-        font-size: 0.75rem; /* Ajuste o tamanho do botão de paginação */
-        padding: 0.5rem 1rem; /* Ajuste o espaçamento do botão de paginação */
-    }
-
-    .pokemon .name {
-        font-size: 1.15rem; /* Ajuste o tamanho do nome do Pokémon */
-    }
-
-    .pokemon .detail img {
-        max-width: 70%;
-        height: 300px;   
-    }
-
-    .pokemon .number {
-        color: #000;
-        opacity: .4;
-        text-align: right;
-        font-size: 5rem;
+@media screen and (max-width: 1000px) {
+    body{
+        background-color: #fff;
     }
 }

@@ -6,15 +6,7 @@
     list-style: none;
 }
 
-.pokebola {
-    width: 3rem; 
-    height: 3rem;
-    background-image: url('/assets/svg/pokebolal.svg'); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute; 
-    transform: translateY(-20%); 
-}
+
 
 /* Remover o sublinhado dos links */
 .pokemon-link {
@@ -160,7 +152,7 @@
     color: #fff;
     background-color: #414141;
     border: none;
-    border-radius: 1rem;
+    border-radius: 2rem;
     cursor: pointer;
 }
 
@@ -179,5 +171,105 @@
 @media screen and (min-width: 992px) {
     .pokemons {
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }   
+}
+
+@media screen and (min-width: 1800px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }   
+}
+
+@media screen and (min-width: 1500px) {
+
+    .content {
+        max-width: 1500px; 
+        padding: 2rem;
+        font-size: 1.5rem;  
+    }
+
+    .pokebola {
+        width: 3.5rem; 
+        height: 3.5rem;
+        background-image: url('/assets/svg/pokebolal.svg'); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;     
+        transform: translateY(-5%); 
+    }
+
+    .pagination button {
+        font-size: 0.75rem;
+        padding: 0.5rem 1rem; 
+    }
+
+    .pokemon .name {
+        font-size: 1.25rem; 
+    }
+
+    .pokemon .detail img {
+        max-width: 70%;
+        max-height: 300px;   
+    }
+
+    .pokemon .number {
+        color: #000;
+        opacity: .5;
+        text-align: right;
+        font-size: 1rem;
+    }
+
+    .pokemon .detail .types .type {
+        font-size: .725rem;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+
+    .pokebola {
+        width: 3.5rem; 
+        height: 3.5rem;
+        background-image: url('/assets/svg/pokebolal.svg'); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute; 
+        transform: translateY(-5%); 
+    }
+
+    .content {
+        max-width: 1800px; 
+        padding: 2rem; 
+        font-size: 1.5rem;
+    }
+
+    .pagination button {
+        font-size: 1.5rem; 
+        padding: 0.5rem 0.725rem; 
+    }
+
+    .pokemon .name {
+        font-size: 1.5rem; 
+    }
+
+    .pokemon .detail img {
+        max-width: 40%;
+        max-height: fit-content;   
+    }
+
+    .pokemon .number {
+        color: #000;
+        opacity: .5;
+        text-align: right;
+        font-size: 1rem;
+    }
+
+    .pokemon .detail .types .type {
+        font-size: 1rem;
     }
 }
