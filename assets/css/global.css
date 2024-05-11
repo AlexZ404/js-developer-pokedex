@@ -14,12 +14,6 @@ body {
     background-color: #fff;
 }
 
-.titulo{
-    display: block;
-    align-items: center;
-    justify-content: center;
-}
-
 .pokebola {
     width: 2.5rem; 
     height: 2.5rem;
