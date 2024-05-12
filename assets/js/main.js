@@ -8,7 +8,7 @@ let offset = 0;
 function convertPokemonToLi(pokemon) {
     return `
     <li class="pokemon ${pokemon.type}">
-    <a class="pokemon-link" href="/pokemon-details.html?number=${pokemon.number}">
+    <a class="pokemon-link" href="/pokemon-details.html?id=${pokemon.number}">
         <span class="number">#${pokemon.number}</span>
         <span class="name">${pokemon.name}</span>
         <div class="detail">
@@ -48,5 +48,5 @@ loadMoreButton.addEventListener('click', () => {
 const icone = document.getElementsByClassName('pokemons')
 
 icone.addEventListener("click", () => {
-    window.location.href = `./detail.html?id=${pokemon.number}`;
+    window.location.href = `./pokemon-details.html?id=${pokemon.number}`;
 })
