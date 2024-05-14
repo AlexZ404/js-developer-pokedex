@@ -51,7 +51,7 @@ async function loadPokemon(id) {
                 });
             }
 
-            window.history.pushState({}, "", `./detail.html?id=${id}`);
+            window.history.pushState({}, "", `./pokemon-details.html?id=${id}`);
         }
 
         return true;
@@ -63,7 +63,7 @@ async function loadPokemon(id) {
 
 async function navigatePokemon(id) {
     currentPokemonId = id;
-    await loadPoekmon(id);
+    await loadPokemon(id);
 }
 
 const typeColors = {
@@ -85,6 +85,7 @@ const typeColors = {
     dark: "#705848",
     steel: "#B8B8D0",
     dark: "#EE99AC",
+    fairy: "#f9aec7",
 }
 
 function setElementStyles(elements, cssProperty, value) {
