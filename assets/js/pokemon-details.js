@@ -51,7 +51,7 @@ async function loadPokemon(id) {
                 });
             }
 
-            window.history.pushState({}, "", `./pokemon-details.html?id=${id}`);
+            window.history.pushState({}, "", `pokemon-details.html?id=${id}`);
         }
 
         return true;
