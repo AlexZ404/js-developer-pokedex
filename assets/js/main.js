@@ -45,8 +45,4 @@ loadMoreButton.addEventListener('click', () => {
     }
 })
 
-const icone = document.getElementsByClassName('pokemons')
 
-icone.addEventListener("click", () => {
-    window.location.href = `pokemon-details.html?id=${pokemon.number}`;
-})
